@@ -3,6 +3,7 @@ import Background from "./../assets/images/background.jpg";
 
 export default function createHome() {
   const home = document.createElement("main");
+  home.classList.add("home");
   const right = document.createElement("div");
   const left = document.createElement("div");
 
