@@ -8,16 +8,15 @@ export default function createNav() {
   navBar.classList.add("nav-bar");
   searchIcon.src = Search;
 
-  let divs = [];
   let texts = ["Home", "Menu", "Contact"];
 
   for (let i = 0; i < 4; i++) {
-    divs[i] = document.createElement("div");
-    divs[i].classList.add("nav-item");
-    if (i !== 3) divs[i].textContent = texts[i];
-    else divs[i].appendChild(searchIcon);
+    let divs = document.createElement("div");
+    divs.classList.add("nav-item");
+    if (i !== 3) divs.textContent = texts[i];
+    else divs.appendChild(searchIcon);
 
-    navBar.appendChild(divs[i]);
+    navBar.appendChild(divs);
   }
 
   return navBar;

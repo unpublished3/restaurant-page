@@ -1,0 +1,47 @@
+main {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  color: #0E5135;
+  margin-bottom: 15px;
+}
+
+.name {
+  width: 80%;
+  text-align: center;
+  font-size: 50px;
+  color: #a09b34;
+}
+
+.btn {
+  margin-top: 50px;
+}
+
+.btn-item {
+  margin-left: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #494B4B;
+  box-shadow: 0 0.2rem 0.6rem #00000080;
+  color: #4ABA91;
+}
+
+.btn-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.img {
+  width: 100%;
+}
