@@ -1,6 +1,8 @@
 import Search from "./../assets/images/search.png";
 import "./../styles/nav.css";
 
+let divs = [];
+
 export default function createNav() {
   const navBar = document.createElement("nav");
   const searchIcon = new Image();
@@ -11,13 +13,17 @@ export default function createNav() {
   let texts = ["Home", "Menu", "Contact"];
 
   for (let i = 0; i < 4; i++) {
-    let divs = document.createElement("div");
-    divs.classList.add("nav-item");
-    if (i !== 3) divs.textContent = texts[i];
-    else divs.appendChild(searchIcon);
+    divs[i] = document.createElement("div");
+    divs[i].classList.add("nav-item");
+    if (i !== 3) {
+      divs[i].textContent = texts[i];
+      divs[i].value = texts[i];
+    } else divs[i].appendChild(searchIcon);
 
-    navBar.appendChild(divs);
+    navBar.appendChild(divs[i]);
   }
 
   return navBar;
 }
+
+export { divs };
