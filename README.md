@@ -1,3 +1,3 @@
 # Restaurant Page
 
-[Live Page](https://magn3tism.github.io/restaurant-page/)
+[Live Page](https://unpublished3.github.io/restaurant-page/)
